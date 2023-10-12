@@ -8,63 +8,149 @@
 .icon-buscador {
     width: 24px;
     height: 24px;
+   
     /* inline-block: para que se muestre en un alínea y además respete las medidas de las img */
-    display: inline-block;
+    /* display: inline-block; */
+    /* display: flex; */
+
 }
 
 #lupa {
     filter: invert(64%) sepia(15%) saturate(99%) hue-rotate(169deg) brightness(97%) contrast(90%);
 }
-main{
-    margin-top: 75px;
-    height: 60vh;
-    border: none;
+header{
+    height: 10vh;
 }
-main section{
-    text-align: center;
+header div{
+    /* text-align: right; */
+    /* height: 10vh; */
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+    /* display:flex ;
+    justify-content: end; */
+}
+header div a{
+    margin-right: 15px;
+}
+main{
+    
+    height: 78vh;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.conjunto-buscador{
+    padding: 6px;
+    border: gray solid 1px ;
+    border-radius:24px;
+    display: flex;
+    /* align-content no se ejcuta si está en nowrap */
+    align-items: center;
+    gap:5px;
+    height: 40%;
+    margin-bottom: 20px;
+    padding: 0px 14px 0px 14px;
 
 }
-header{
-    text-align: right;
-    height: 10vh;
-    font-size: 13px;
+ .btns-buscador{
+    display: flex;
+    justify-content: center;
+    /* gap:10px; */
+    width: 40vw;
+    height: 70px;
+ }
+
+ article.btns-buscador button{
+    border: 0;
+    background-color: #f8f9fa;
+padding: 0px 11px 0px 11px;
+margin: 11px 8px 11px 4px;
+border-radius: 4px;
+    
+ }
+
+#logo{
+    margin-bottom: 20px;
 }
+
+#input-search{
+    
+    border: 0;
+    outline: none;
+    width: 34vw;
+        
+}
+a.icon-header{
+    width: 30px;
+    filter: invert(64%) sepia(15%) saturate(99%) hue-rotate(169deg) brightness(97%) contrast(90%);
+}
+
+img.icon-header{
+    width: 50px;
+}
+
 
 footer{
     background-color: #f2f2f2 ;
     color: gray;
    height:auto;
-   text-align: center;
+   /* display: flex;
+   flex-wrap: wrap; */
+
 }
 
-ul{
+footer ul{
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    /* display: inline-block; */
     margin: 0px;
+    font-size: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+   
     /* margin: 15px; */
 }
 
 footer ul li{
-    display: inline-block;
+    /* display: inline-block; */
     /* Se puede poner los 4 elemtnos sin especificar la posición, estos son como las manecillas del reloj */
-    margin:15px;
-   
-}
-header ul li{
-    display: inline-block;
-    /* Se puede poner los 4 elemtnos sin especificar la posición, estos son como las manecillas del reloj */
-    margin:15px
+    margin:10px 15px 10px 15px;
 }
 
+footer section.info-adicional{
+    display: flex;
+    justify-content: space-between;
+}
+ /* header ul li{*/
+    
+    /* display: inline-block; */
+    /* Se puede poner los 4 elemtnos sin especificar la posición, estos son como las manecillas del reloj */
+    /* margin:15px */
+/*}  */
 
 #idioma{
-    text-align: left;
+   display: flex;
+   align-items: start;
+}
+hr{
+    margin: 0;
 }
 
-#input-search{
-width: 40vw;
-}
 
-#logo{
-    margin-bottom: 10px;
-}
+    /* Flex permite dem¿finir a través de la dirección (dinamico) como deseamos que el contenido se ordene
+    direction: columna,fila, columna inversa, fila invers. Default: Row/Fila
+    wrap: si lso elemntos se deben concretar a una fila  (nowrap) o si pueden distribuirse hacia abajo al llegar al tope(wrap). Default: nowrap
+    align-content: especifica donde se ubicara TODO el contendo/bloque de derecha a izquierda, eje X ou horizontal, que se está especificando (hijo directo) - centro, a la derecha, izquierda, dejando espacio en blanco en medio, espacio en blanco al rededor, strech.
+    align-items: determina como se van a ordenar lso elemntos que están dentro del contenido/bloque. derecha, izquierda, centro, strech(justificado), base de linea (pegado a l ettxo anterior)
+    justify-content: especifica la unicacion que tendra TODO el contenido/bloque de arriba a abajo, eje Y o vertical
+REFERENCIA: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+     */
+    
