@@ -1,0 +1,70 @@
+/* vh y vw se usan para ajustar lso elemntos de acuerdo al padre, su unidad de medida es de 10px. Se puede definir header y main y en footer establcer la propiedad como auto */
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.icon-buscador {
+    width: 24px;
+    height: 24px;
+    /* inline-block: para que se muestre en un alínea y además respete las medidas de las img */
+    display: inline-block;
+}
+
+#lupa {
+    filter: invert(64%) sepia(15%) saturate(99%) hue-rotate(169deg) brightness(97%) contrast(90%);
+}
+main{
+    margin-top: 75px;
+    height: 60vh;
+    border: none;
+}
+main section{
+    text-align: center;
+
+}
+header{
+    text-align: right;
+    height: 10vh;
+    font-size: 13px;
+}
+
+footer{
+    background-color: #f2f2f2 ;
+    color: gray;
+   height:auto;
+   text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px;
+    /* margin: 15px; */
+}
+
+footer ul li{
+    display: inline-block;
+    /* Se puede poner los 4 elemtnos sin especificar la posición, estos son como las manecillas del reloj */
+    margin:15px;
+   
+}
+header ul li{
+    display: inline-block;
+    /* Se puede poner los 4 elemtnos sin especificar la posición, estos son como las manecillas del reloj */
+    margin:15px
+}
+
+
+#idioma{
+    text-align: left;
+}
+
+#input-search{
+width: 40vw;
+}
+
+#logo{
+    margin-bottom: 10px;
+}
